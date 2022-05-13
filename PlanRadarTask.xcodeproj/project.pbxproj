@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B6915069B7A93EAD0F1B42F /* Pods_PlanRadarTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0038BC7F570C2B8A93BAAE56 /* Pods_PlanRadarTask.framework */; };
+		9207A364282EA71900B9512F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A363282EA71900B9512F /* AppDelegate.swift */; };
+		9207A36E282EA71900B9512F /* PlanRadarTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9207A36C282EA71900B9512F /* PlanRadarTask.xcdatamodeld */; };
+		9207A370282EA71A00B9512F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9207A36F282EA71A00B9512F /* Assets.xcassets */; };
+		9207A373282EA71A00B9512F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9207A371282EA71A00B9512F /* LaunchScreen.storyboard */; };
+		9207A381282EA84500B9512F /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9207A37D282EA84500B9512F /* APIClient.m */; };
+		9207A382282EA84500B9512F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A37F282EA84500B9512F /* Request.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0038BC7F570C2B8A93BAAE56 /* Pods_PlanRadarTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanRadarTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC2B67972CC92F54A629F0 /* Pods-PlanRadarTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarTask.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9207A360282EA71900B9512F /* PlanRadarTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanRadarTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9207A363282EA71900B9512F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9207A36D282EA71900B9512F /* PlanRadarTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlanRadarTask.xcdatamodel; sourceTree = "<group>"; };
+		9207A36F282EA71A00B9512F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9207A372282EA71A00B9512F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9207A374282EA71A00B9512F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9207A37C282EA84500B9512F /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		9207A37D282EA84500B9512F /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		9207A37F282EA84500B9512F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9207A380282EA84500B9512F /* PlanRadar-Task-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanRadar-Task-Bridging-Header.h"; sourceTree = "<group>"; };
+		E664DBC1583DFFD99595659F /* Pods-PlanRadarTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarTask.release.xcconfig"; path = "Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9207A35D282EA71900B9512F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6915069B7A93EAD0F1B42F /* Pods_PlanRadarTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070D5F031A5D4CE7A370FFF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0038BC7F570C2B8A93BAAE56 /* Pods_PlanRadarTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9207A357282EA71900B9512F = {
+			isa = PBXGroup;
+			children = (
+				9207A362282EA71900B9512F /* PlanRadarTask */,
+				9207A361282EA71900B9512F /* Products */,
+				DBE45D7907A8837DEF3E6C79 /* Pods */,
+				070D5F031A5D4CE7A370FFF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9207A361282EA71900B9512F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9207A360282EA71900B9512F /* PlanRadarTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9207A362282EA71900B9512F /* PlanRadarTask */ = {
+			isa = PBXGroup;
+			children = (
+				9207A37A282EA82000B9512F /* NetworkLayer */,
+				9207A363282EA71900B9512F /* AppDelegate.swift */,
+				9207A36F282EA71A00B9512F /* Assets.xcassets */,
+				9207A371282EA71A00B9512F /* LaunchScreen.storyboard */,
+				9207A374282EA71A00B9512F /* Info.plist */,
+				9207A36C282EA71900B9512F /* PlanRadarTask.xcdatamodeld */,
+			);
+			path = PlanRadarTask;
+			sourceTree = "<group>";
+		};
+		9207A37A282EA82000B9512F /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9207A37B282EA84500B9512F /* APIClient */,
+				9207A380282EA84500B9512F /* PlanRadar-Task-Bridging-Header.h */,
+				9207A37E282EA84500B9512F /* Request */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		9207A37B282EA84500B9512F /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				9207A37C282EA84500B9512F /* APIClient.h */,
+				9207A37D282EA84500B9512F /* APIClient.m */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		9207A37E282EA84500B9512F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9207A37F282EA84500B9512F /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DBE45D7907A8837DEF3E6C79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC2B67972CC92F54A629F0 /* Pods-PlanRadarTask.debug.xcconfig */,
+				E664DBC1583DFFD99595659F /* Pods-PlanRadarTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9207A35F282EA71900B9512F /* PlanRadarTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9207A377282EA71B00B9512F /* Build configuration list for PBXNativeTarget "PlanRadarTask" */;
+			buildPhases = (
+				7AA8B3BA2A8907E7718F1B1B /* [CP] Check Pods Manifest.lock */,
+				9207A35C282EA71900B9512F /* Sources */,
+				9207A35D282EA71900B9512F /* Frameworks */,
+				9207A35E282EA71900B9512F /* Resources */,
+				82C09531E04D6ACFB76B729A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanRadarTask;
+			productName = PlanRadarTask;
+			productReference = 9207A360282EA71900B9512F /* PlanRadarTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9207A358282EA71900B9512F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9207A35F282EA71900B9512F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9207A35B282EA71900B9512F /* Build configuration list for PBXProject "PlanRadarTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9207A357282EA71900B9512F;
+			productRefGroup = 9207A361282EA71900B9512F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9207A35F282EA71900B9512F /* PlanRadarTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9207A35E282EA71900B9512F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9207A373282EA71A00B9512F /* LaunchScreen.storyboard in Resources */,
+				9207A370282EA71A00B9512F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AA8B3BA2A8907E7718F1B1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanRadarTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C09531E04D6ACFB76B729A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9207A35C282EA71900B9512F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9207A381282EA84500B9512F /* APIClient.m in Sources */,
+				9207A382282EA84500B9512F /* Request.swift in Sources */,
+				9207A364282EA71900B9512F /* AppDelegate.swift in Sources */,
+				9207A36E282EA71900B9512F /* PlanRadarTask.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9207A371282EA71A00B9512F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9207A372282EA71A00B9512F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9207A375282EA71A00B9512F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9207A376282EA71A00B9512F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9207A378282EA71B00B9512F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECC2B67972CC92F54A629F0 /* Pods-PlanRadarTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8J56NYW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanRadarTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ahmed.PlanRadarTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9207A379282EA71B00B9512F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E664DBC1583DFFD99595659F /* Pods-PlanRadarTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8J56NYW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanRadarTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ahmed.PlanRadarTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9207A35B282EA71900B9512F /* Build configuration list for PBXProject "PlanRadarTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9207A375282EA71A00B9512F /* Debug */,
+				9207A376282EA71A00B9512F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9207A377282EA71B00B9512F /* Build configuration list for PBXNativeTarget "PlanRadarTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9207A378282EA71B00B9512F /* Debug */,
+				9207A379282EA71B00B9512F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9207A36C282EA71900B9512F /* PlanRadarTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9207A36D282EA71900B9512F /* PlanRadarTask.xcdatamodel */,
+			);
+			currentVersion = 9207A36D282EA71900B9512F /* PlanRadarTask.xcdatamodel */;
+			path = PlanRadarTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9207A358282EA71900B9512F /* Project object */;
+}
