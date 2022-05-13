@@ -12,12 +12,17 @@
 		9207A36E282EA71900B9512F /* PlanRadarTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9207A36C282EA71900B9512F /* PlanRadarTask.xcdatamodeld */; };
 		9207A370282EA71A00B9512F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9207A36F282EA71A00B9512F /* Assets.xcassets */; };
 		9207A373282EA71A00B9512F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9207A371282EA71A00B9512F /* LaunchScreen.storyboard */; };
-		9207A381282EA84500B9512F /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9207A37D282EA84500B9512F /* APIClient.m */; };
 		9207A382282EA84500B9512F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A37F282EA84500B9512F /* Request.swift */; };
 		9207A38A282EABE700B9512F /* ListCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A388282EABE700B9512F /* ListCitiesViewController.swift */; };
 		9207A38B282EABE700B9512F /* ListCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9207A389282EABE700B9512F /* ListCitiesViewController.xib */; };
 		9207A390282EAF1C00B9512F /* ListCitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A38E282EAF1C00B9512F /* ListCitiesTableViewCell.swift */; };
 		9207A391282EAF1C00B9512F /* ListCitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */; };
+		9207A394282EB6D600B9512F /* CitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A393282EB6D600B9512F /* CitiesRepository.swift */; };
+		9207A397282EB7CC00B9512F /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A396282EB7CC00B9512F /* WeatherResponse.swift */; };
+		9207A39A282EBA2400B9512F /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9207A399282EBA2300B9512F /* APIClient.m */; };
+		9207A39D282EBAAF00B9512F /* CitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A39C282EBAAF00B9512F /* CitiesRequest.swift */; };
+		9207A3A0282EBD0B00B9512F /* CitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A39F282EBD0B00B9512F /* CitiesListViewModel.swift */; };
+		9207A3A2282EBD2000B9512F /* CityUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A3A1282EBD2000B9512F /* CityUIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +35,18 @@
 		9207A372282EA71A00B9512F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9207A374282EA71A00B9512F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9207A37C282EA84500B9512F /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
-		9207A37D282EA84500B9512F /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		9207A37F282EA84500B9512F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		9207A380282EA84500B9512F /* PlanRadar-Task-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanRadar-Task-Bridging-Header.h"; sourceTree = "<group>"; };
 		9207A388282EABE700B9512F /* ListCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCitiesViewController.swift; sourceTree = "<group>"; };
 		9207A389282EABE700B9512F /* ListCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCitiesViewController.xib; sourceTree = "<group>"; };
 		9207A38E282EAF1C00B9512F /* ListCitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCitiesTableViewCell.swift; sourceTree = "<group>"; };
 		9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCitiesTableViewCell.xib; sourceTree = "<group>"; };
+		9207A393282EB6D600B9512F /* CitiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRepository.swift; sourceTree = "<group>"; };
+		9207A396282EB7CC00B9512F /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		9207A398282EBA2300B9512F /* PlanRadarTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanRadarTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		9207A399282EBA2300B9512F /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		9207A39C282EBAAF00B9512F /* CitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRequest.swift; sourceTree = "<group>"; };
+		9207A39F282EBD0B00B9512F /* CitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewModel.swift; sourceTree = "<group>"; };
+		9207A3A1282EBD2000B9512F /* CityUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityUIModel.swift; sourceTree = "<group>"; };
 		E664DBC1583DFFD99595659F /* Pods-PlanRadarTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarTask.release.xcconfig"; path = "Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +91,9 @@
 		9207A362282EA71900B9512F /* PlanRadarTask */ = {
 			isa = PBXGroup;
 			children = (
+				9207A39B282EBAA500B9512F /* Request */,
+				9207A395282EB7C100B9512F /* Models */,
+				9207A392282EB6CA00B9512F /* Repositories */,
 				9207A385282EABA100B9512F /* Modules */,
 				9207A37A282EA82000B9512F /* NetworkLayer */,
 				9207A363282EA71900B9512F /* AppDelegate.swift */,
@@ -96,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				9207A37B282EA84500B9512F /* APIClient */,
-				9207A380282EA84500B9512F /* PlanRadar-Task-Bridging-Header.h */,
 				9207A37E282EA84500B9512F /* Request */,
 			);
 			path = NetworkLayer;
@@ -106,7 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				9207A37C282EA84500B9512F /* APIClient.h */,
-				9207A37D282EA84500B9512F /* APIClient.m */,
+				9207A399282EBA2300B9512F /* APIClient.m */,
+				9207A398282EBA2300B9512F /* PlanRadarTask-Bridging-Header.h */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -130,6 +143,7 @@
 		9207A386282EABBD00B9512F /* Cities */ = {
 			isa = PBXGroup;
 			children = (
+				9207A39E282EBD0100B9512F /* ViewModels */,
 				9207A387282EABCC00B9512F /* List */,
 			);
 			path = Cities;
@@ -149,6 +163,7 @@
 			children = (
 				9207A389282EABE700B9512F /* ListCitiesViewController.xib */,
 				9207A388282EABE700B9512F /* ListCitiesViewController.swift */,
+				9207A3A1282EBD2000B9512F /* CityUIModel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -160,6 +175,38 @@
 				9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		9207A392282EB6CA00B9512F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9207A393282EB6D600B9512F /* CitiesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9207A395282EB7C100B9512F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9207A396282EB7CC00B9512F /* WeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9207A39B282EBAA500B9512F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9207A39C282EBAAF00B9512F /* CitiesRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9207A39E282EBD0100B9512F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9207A39F282EBD0B00B9512F /* CitiesListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		DBE45D7907A8837DEF3E6C79 /* Pods */ = {
@@ -205,6 +252,7 @@
 				TargetAttributes = {
 					9207A35F282EA71900B9512F = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -288,11 +336,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9207A390282EAF1C00B9512F /* ListCitiesTableViewCell.swift in Sources */,
-				9207A381282EA84500B9512F /* APIClient.m in Sources */,
 				9207A382282EA84500B9512F /* Request.swift in Sources */,
+				9207A394282EB6D600B9512F /* CitiesRepository.swift in Sources */,
+				9207A3A0282EBD0B00B9512F /* CitiesListViewModel.swift in Sources */,
+				9207A39D282EBAAF00B9512F /* CitiesRequest.swift in Sources */,
 				9207A364282EA71900B9512F /* AppDelegate.swift in Sources */,
+				9207A3A2282EBD2000B9512F /* CityUIModel.swift in Sources */,
 				9207A38A282EABE700B9512F /* ListCitiesViewController.swift in Sources */,
 				9207A36E282EA71900B9512F /* PlanRadarTask.xcdatamodeld in Sources */,
+				9207A397282EB7CC00B9512F /* WeatherResponse.swift in Sources */,
+				9207A39A282EBA2400B9512F /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8J56NYW84;
@@ -449,6 +503,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ahmed.PlanRadarTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanRadarTask/NetworkLayer/APIClient/PlanRadarTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8J56NYW84;
@@ -477,6 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ahmed.PlanRadarTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanRadarTask/NetworkLayer/APIClient/PlanRadarTask-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
