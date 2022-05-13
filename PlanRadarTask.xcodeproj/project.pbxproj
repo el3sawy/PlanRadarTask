@@ -16,6 +16,8 @@
 		9207A382282EA84500B9512F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A37F282EA84500B9512F /* Request.swift */; };
 		9207A38A282EABE700B9512F /* ListCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A388282EABE700B9512F /* ListCitiesViewController.swift */; };
 		9207A38B282EABE700B9512F /* ListCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9207A389282EABE700B9512F /* ListCitiesViewController.xib */; };
+		9207A390282EAF1C00B9512F /* ListCitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207A38E282EAF1C00B9512F /* ListCitiesTableViewCell.swift */; };
+		9207A391282EAF1C00B9512F /* ListCitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		9207A380282EA84500B9512F /* PlanRadar-Task-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanRadar-Task-Bridging-Header.h"; sourceTree = "<group>"; };
 		9207A388282EABE700B9512F /* ListCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCitiesViewController.swift; sourceTree = "<group>"; };
 		9207A389282EABE700B9512F /* ListCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCitiesViewController.xib; sourceTree = "<group>"; };
+		9207A38E282EAF1C00B9512F /* ListCitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCitiesTableViewCell.swift; sourceTree = "<group>"; };
+		9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCitiesTableViewCell.xib; sourceTree = "<group>"; };
 		E664DBC1583DFFD99595659F /* Pods-PlanRadarTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarTask.release.xcconfig"; path = "Target Support Files/Pods-PlanRadarTask/Pods-PlanRadarTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 		9207A387282EABCC00B9512F /* List */ = {
 			isa = PBXGroup;
 			children = (
+				9207A38D282EAEFB00B9512F /* TableViewCell */,
 				9207A38C282EAD2900B9512F /* ViewController */,
 			);
 			path = List;
@@ -146,6 +151,15 @@
 				9207A388282EABE700B9512F /* ListCitiesViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9207A38D282EAEFB00B9512F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9207A38E282EAF1C00B9512F /* ListCitiesTableViewCell.swift */,
+				9207A38F282EAF1C00B9512F /* ListCitiesTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		DBE45D7907A8837DEF3E6C79 /* Pods */ = {
@@ -217,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9207A391282EAF1C00B9512F /* ListCitiesTableViewCell.xib in Resources */,
 				9207A373282EA71A00B9512F /* LaunchScreen.storyboard in Resources */,
 				9207A370282EA71A00B9512F /* Assets.xcassets in Resources */,
 				9207A38B282EABE700B9512F /* ListCitiesViewController.xib in Resources */,
@@ -272,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9207A390282EAF1C00B9512F /* ListCitiesTableViewCell.swift in Sources */,
 				9207A381282EA84500B9512F /* APIClient.m in Sources */,
 				9207A382282EA84500B9512F /* Request.swift in Sources */,
 				9207A364282EA71900B9512F /* AppDelegate.swift in Sources */,

@@ -9,10 +9,18 @@ import UIKit
 
 class ListCitiesViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UINib(nibName: ListCitiesTableViewCell.name, bundle: nil), forCellReuseIdentifier: ListCitiesTableViewCell.name)
+            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.rowHeight = 50
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Cities"
         addNavigationBarButtonItem()
     }
     
@@ -42,5 +50,26 @@ class ListCitiesViewController: UIViewController {
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
     }
+}
+
+// MARK: - UITableViewDataSource Methods
+extension ListCitiesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListCitiesTableViewCell.name, for: indexPath) as! ListCitiesTableViewCell
+        cell.delegate = self
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate Methods
+extension ListCitiesViewController: UITableViewDelegate, ListCitiesTableViewCellProtocol {
     
 }
+
+
+
+
