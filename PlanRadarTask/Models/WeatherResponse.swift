@@ -15,15 +15,16 @@ struct WeatherResponse: Mappable  {
     var weather: [Weather]?
     var main: Main?
     var wind: Wind?
-    
+    var timezone: Int?
     // MARK: - Initializer
     
     init?(map: Map) {}
     
-    init(weather: [Weather]?, main: Main?, wind: Wind?) {
+    init(weather: [Weather]?, main: Main?, wind: Wind?, timezone: Int?) {
         self.weather = weather
         self.main = main
         self.wind = wind
+        self.timezone = timezone
     }
     
     // MARK: - Mapping Methods
@@ -32,6 +33,7 @@ struct WeatherResponse: Mappable  {
         weather <- map["weather"]
         main <- map["main"]
         wind <- map["wind"]
+        timezone <- map["timezone"]
     }
 }
 

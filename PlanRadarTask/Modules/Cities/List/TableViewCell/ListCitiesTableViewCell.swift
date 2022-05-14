@@ -7,7 +7,7 @@
 
 import UIKit
 protocol ListCitiesTableViewCellProtocol: AnyObject {
-    
+    func didTappedCityInfo(with city: String)
 }
 
 class ListCitiesTableViewCell: UITableViewCell {
@@ -18,12 +18,15 @@ class ListCitiesTableViewCell: UITableViewCell {
     static let name = "ListCitiesTableViewCell"
     
     // MARK: - Methods
-    func configure(with title: String?) {
-        titleLabel.text = title
+    var item: CityUIModel! {
+        didSet {
+            titleLabel.text = item.name
+        }
     }
     
     // MARK: - Button Actions
     @IBAction func infoTapped(_ sender: Any) {
+        delegate?.didTappedCityInfo(with: item.name ?? "")
     }
     
 }

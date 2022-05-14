@@ -19,7 +19,7 @@ enum CitiesRequest: Request {
         case .details(let cityName):
             return "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=f5cb0b965ea1564c50c6f1b74534d823"
         case .weatherIcon(let iconId):
-            return "http://openweathermap.org/img/w/\(iconId).png"
+            return "https://openweathermap.org/img/w/\(iconId).png"
         }
     }
 
