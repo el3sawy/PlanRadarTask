@@ -22,9 +22,9 @@ class ListCitiesViewController: UIViewController {
     }
     
     // MARK: - Properties
-    var viewModel: CitiesListViewModelProtocol = CitiesListViewModel(repository: CitiesRepository())
+    var viewModel: CitiesListViewModelProtocol!
     private let disposeBag = DisposeBag()
-    private var cities: [CityUIModel] = []
+    private var cityNames: [String] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -37,11 +37,12 @@ class ListCitiesViewController: UIViewController {
     // MARK: - Functions
     private func subscribeOnEvents() {
         viewModel.citiesObservable.subscribe(onNext: { [weak self] values in
-            self?.cities = values
+            self?.cityNames = values
             self?.tableView.reloadData()
         }).disposed(by: disposeBag)
     }
-   private func addNavigationBarButtonItem() {
+    
+    private func addNavigationBarButtonItem() {
         let addBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -69,25 +70,32 @@ class ListCitiesViewController: UIViewController {
 // MARK: - UITableViewDataSource Methods
 extension ListCitiesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        cities.count
+        cityNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ListCitiesTableViewCell.name, for: indexPath) as! ListCitiesTableViewCell
         cell.delegate = self
-        cell.item = cities[indexPath.row]
+        cell.item = cityNames[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        viewModel.deleteWeather(at: indexPath.row)
     }
 }
 
 // MARK: - UITableViewDelegate Methods
 extension ListCitiesViewController: UITableViewDelegate, ListCitiesTableViewCellProtocol {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = cities[indexPath.row]
-        navigationController?.pushViewController(CityDetailsViewControllerViewController(model: model), animated: true)
+        let model = viewModel.getWeatherInfo(at: indexPath.row)
+        viewModel.router.pushWeatherDetails(weather: model)
     }
     
-    func didTappedCityInfo(with city: String) {
-        
+    func didTappedCityInfo(cell: ListCitiesTableViewCell) {
+        guard let index = tableView.indexPath(for: cell)?.row else { return }
+        let models = viewModel.getWeatherInfoHistory(at: index)
+        viewModel.router.pushWeatherHistory(weathers: models)
     }
 }

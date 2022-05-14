@@ -7,15 +7,20 @@
 
 import CoreData
 
-class WeatherDataModel: NSManagedObject, Identifiable  {
+@objc(WeatherInfoModel)
+final class WeatherInfoModel: NSManagedObject  {
     
-    @NSManaged var name: String
     @NSManaged var descriptionInfo: String
     @NSManaged var humidity: String
     @NSManaged var imageURL: String
     @NSManaged var temperature: String
-    @NSManaged var timeTemp: String
+    @NSManaged var timeTemp: Date
     @NSManaged var wind: String
-    
-    @NSManaged var city: CityDataModel
+    @NSManaged var city: CityModel
+}
+
+extension WeatherInfoModel {
+    @nonobjc class func fetchRequest() -> NSFetchRequest<WeatherInfoModel> {
+        NSFetchRequest<WeatherInfoModel>(entityName: "WeatherInfoModel")
+    }
 }
