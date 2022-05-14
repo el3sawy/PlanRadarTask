@@ -9,15 +9,18 @@ import UIKit
 
 class WeatherHistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var weatherLable: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    static let name = "WeatherHistoryTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    var item: CityUIModel! {
+        didSet {
+            dateLabel.text = item.dateString
+            weatherLable.text = item.description
+        }
+    }
 }
