@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class CityDetailsViewControllerViewController: UIViewController {
+class CityDetailsViewController: UIViewController {
 
     // MARK: - IBOutlet
     @IBOutlet private weak var weatherIconImageView: UIImageView!
@@ -39,11 +39,12 @@ class CityDetailsViewControllerViewController: UIViewController {
     // MARK: - Functions
     private func setValues() {
         title = model.name
-        descriptionTitleLabel.text = model.largeDescription
+        
+        descriptionTitleLabel.text = "Weather information for \(model.name) received on \(model.dateString) "
         descriptionLabel.text = model.description
         temperatureLabel.text = model.temperature
         humidityLabel.text = model.humidity
         windSpeedLabel.text = model.wind
-        weatherIconImageView.kf.setImage(with: URL(string: model.imageURL ?? ""))
+        weatherIconImageView.kf.setImage(with: URL(string: model.imageURL))
     }
 }
